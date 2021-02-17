@@ -1,0 +1,6 @@
+to find what countries are there in the dataset ?
+
+ 
+SELECT distinct country_region
+FROM `bigquery-public-data.covid19_symptom_search.symptom_search_country_daily`
+limit 600 
