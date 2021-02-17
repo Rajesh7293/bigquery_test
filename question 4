@@ -1,0 +1,5 @@
+what is the minimum number of people searched for symptom symptom_Abdominal_obesity ?
+
+SELECT min(symptom_Abdominal_obesity)
+FROM `bigquery-public-data.covid19_symptom_search.symptom_search_country_daily`
+limit 600 
