@@ -1,0 +1,5 @@
+maximum people searched symptom abdominal obesity ?
+
+SELECT max(symptom_Abdominal_obesity)
+FROM `bigquery-public-data.covid19_symptom_search.symptom_search_country_daily`
+limit 600
