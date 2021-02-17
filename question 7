@@ -1,0 +1,5 @@
+average people who searched for symptom amenorrhea
+
+SELECT avg (symptom_Amenorrhea)
+FROM `bigquery-public-data.covid19_symptom_search.symptom_search_country_daily`
+limit 600
