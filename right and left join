@@ -1,0 +1,9 @@
+SELECT sender_amount receiver_amount 
+FROM cmorq-data.ltc.sender_april 
+RIGHT JOIN cmorq-data.ltc.receiver_april ON sender_april.block_id = receiver_april.block_id 
+ORDER BY receiver_april.receiver_entity ;
+
+SELECT sender_amount receiver_amount 
+FROM cmorq-data.ltc.sender_april 
+LEFT JOIN cmorq-data.ltc.receiver_april ON sender_april.block_id = receiver_april.block_id 
+ORDER BY sender_april. sender_entity ;
