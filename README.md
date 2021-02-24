@@ -1,2 +1,2 @@
-# bigquery_test
+# bigquery_SYMPTOM SEARCH
 Data Analytics assignment
