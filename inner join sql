@@ -1,0 +1,9 @@
+SELECT  `bigquery-public-data.london_bicycles.cycle_hire`. start_station_id ,  `bigquery-public-data.london_bicycles.cycle_stations`. bikes_count
+FROM `bigquery-public-data.london_bicycles.cycle_hire` 
+inner join  `bigquery-public-data.london_bicycles.cycle_stations` on `bigquery-public-data.london_bicycles.cycle_hire`. start_station_id = `bigquery-public-data.london_bicycles.cycle_stations`. id
+LIMIT 100
+
+SELECT  `bigquery-public-data.london_bicycles.cycle_hire`. rental_id ,  `bigquery-public-data.london_bicycles.cycle_stations`. id
+FROM `bigquery-public-data.london_bicycles.cycle_hire` 
+inner join  `bigquery-public-data.london_bicycles.cycle_stations` on `bigquery-public-data.london_bicycles.cycle_hire`. start_station_id = `bigquery-public-data.london_bicycles.cycle_stations`. id
+LIMIT 100
